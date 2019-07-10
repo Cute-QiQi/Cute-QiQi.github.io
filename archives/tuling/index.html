@@ -108,20 +108,19 @@
 
 
 
-<meta name="description" content="本文将具体介绍如何利用Python的图像处理模块pillow和OCR模块pytesseract来识别上述验证码（数字加字母）。 过程我们识别上述验证码的算法过程如下：  将原图像进行灰度处理，转化为灰度图像； 获取图片中像素点数量最多的像素（此为图片背景），将该像素作为阈值进行二值化处理，将灰度图像转化为黑白图像（用来提高识别的准确率）； 去掉黑白图像中的噪声，噪声定义为：以该点为中心的九宫格的黑">
+<meta name="description" content="在GitHub看到一个微信机器人的开源项目，便fork了源码下来玩耍了一下 “python关于开发微信的库主要有itchat和wxpy，而wxpy底层是调用的itchat，所以如果你只是要使用的话建议使用wxpy库，它比其他的库都要优雅，更面向对象，而且深度整合了图灵机器人和小i机器人；而itchat扩展性更好，如果你想自己开发一个自己的微信库那建议选itchat。” 图灵？？？很早之前玩过的，功">
 <meta property="og:type" content="article">
-<meta property="og:title" content="验证码破解">
-<meta property="og:url" content="https://ctqq.me/archives/python-yzm/index.html">
+<meta property="og:title" content="Python 创建“高智商”微信机器人">
+<meta property="og:url" content="https://ctqq.me/archives/tuling/index.html">
 <meta property="og:site_name" content="Hi, QiQi">
-<meta property="og:description" content="本文将具体介绍如何利用Python的图像处理模块pillow和OCR模块pytesseract来识别上述验证码（数字加字母）。 过程我们识别上述验证码的算法过程如下：  将原图像进行灰度处理，转化为灰度图像； 获取图片中像素点数量最多的像素（此为图片背景），将该像素作为阈值进行二值化处理，将灰度图像转化为黑白图像（用来提高识别的准确率）； 去掉黑白图像中的噪声，噪声定义为：以该点为中心的九宫格的黑">
+<meta property="og:description" content="在GitHub看到一个微信机器人的开源项目，便fork了源码下来玩耍了一下 “python关于开发微信的库主要有itchat和wxpy，而wxpy底层是调用的itchat，所以如果你只是要使用的话建议使用wxpy库，它比其他的库都要优雅，更面向对象，而且深度整合了图灵机器人和小i机器人；而itchat扩展性更好，如果你想自己开发一个自己的微信库那建议选itchat。” 图灵？？？很早之前玩过的，功">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://ctqq.me/archives/python-yzm/py1.jpg">
-<meta property="og:image" content="https://ctqq.me/archives/python-yzm/py2.jpg">
-<meta property="og:updated_time" content="2019-03-18T05:58:47.468Z">
+<meta property="og:image" content="https://ctqq.me/archives/tuling/tuling6.png">
+<meta property="og:updated_time" content="2019-07-10T07:45:05.256Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="验证码破解">
-<meta name="twitter:description" content="本文将具体介绍如何利用Python的图像处理模块pillow和OCR模块pytesseract来识别上述验证码（数字加字母）。 过程我们识别上述验证码的算法过程如下：  将原图像进行灰度处理，转化为灰度图像； 获取图片中像素点数量最多的像素（此为图片背景），将该像素作为阈值进行二值化处理，将灰度图像转化为黑白图像（用来提高识别的准确率）； 去掉黑白图像中的噪声，噪声定义为：以该点为中心的九宫格的黑">
-<meta name="twitter:image" content="https://ctqq.me/archives/python-yzm/py1.jpg">
+<meta name="twitter:title" content="Python 创建“高智商”微信机器人">
+<meta name="twitter:description" content="在GitHub看到一个微信机器人的开源项目，便fork了源码下来玩耍了一下 “python关于开发微信的库主要有itchat和wxpy，而wxpy底层是调用的itchat，所以如果你只是要使用的话建议使用wxpy库，它比其他的库都要优雅，更面向对象，而且深度整合了图灵机器人和小i机器人；而itchat扩展性更好，如果你想自己开发一个自己的微信库那建议选itchat。” 图灵？？？很早之前玩过的，功">
+<meta name="twitter:image" content="https://ctqq.me/archives/tuling/tuling6.png">
 
 
 
@@ -178,13 +177,13 @@
 
 
 
-  <link rel="canonical" href="https://ctqq.me/archives/python-yzm/">
+  <link rel="canonical" href="https://ctqq.me/archives/tuling/">
 
 
 
 
 
-  <title>验证码破解 | Hi, QiQi</title>
+  <title>Python 创建“高智商”微信机器人 | Hi, QiQi</title>
   
 
 
@@ -431,8 +430,8 @@
   
   
   <div class="post-date">
-			<div class="post-month">03月</div>
-			<div class="post-day">18</div>
+			<div class="post-month">07月</div>
+			<div class="post-day">10</div>
 	</div>
   
   <div class="post-badge">
@@ -447,7 +446,7 @@
   
 
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ctqq.me/archives/python-yzm/">
+    <link itemprop="mainEntityOfPage" href="https://ctqq.me/archives/tuling/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="QiQi">
@@ -464,7 +463,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">验证码破解</h1>
+          <h1 class="post-title" itemprop="name headline">Python 创建“高智商”微信机器人</h1>
         
 
         <div class="post-meta">
@@ -476,7 +475,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-18T13:34:19+08:00">2019-03-18</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-10T14:53:46+08:00">2019-07-10</time>
             
 
             
@@ -511,7 +510,7 @@
 
           
           
-             <span id="/archives/python-yzm/" class="leancloud_visitors" data-flag-title="验证码破解">
+             <span id="/archives/tuling/" class="leancloud_visitors" data-flag-title="Python 创建“高智商”微信机器人">
                <span class="post-meta-divider">•</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -540,22 +539,14 @@
       
 
       
-        <p>本文将具体介绍如何利用Python的图像处理模块pillow和OCR模块pytesseract来识别上述验证码（数字加字母）。</p>
-<h3 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h3><p>我们识别上述验证码的算法过程如下：</p>
-<ol>
-<li>将原图像进行灰度处理，转化为灰度图像；</li>
-<li>获取图片中像素点数量最多的像素（此为图片背景），将该像素作为阈值进行二值化处理，将灰度图像转化为黑白图像（用来提高识别的准确率）；</li>
-<li>去掉黑白图像中的噪声，噪声定义为：以该点为中心的九宫格的黑点的数量小于等于4；</li>
-<li>利用pytesseract模块识别，去掉识别结果中的特殊字符，获得识别结果。<a id="more"></a></li>
-</ol>
-<p>我们的图片如下（共66张图片）：</p>
-<p><img src="/archives/python-yzm/py1.jpg" alt=""></p>
-<h3 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> pytesseract</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> defaultdict</span><br><span class="line"></span><br><span class="line"><span class="comment"># tesseract.exe所在的文件路径</span></span><br><span class="line">pytesseract.pytesseract.tesseract_cmd = <span class="string">'C://Program Files (x86)/Tesseract-OCR/tesseract.exe'</span>  <span class="comment"># 获取图片中像素点数量最多的像素</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_threshold</span><span class="params">(image)</span>:</span></span><br><span class="line">    pixel_dict = defaultdict(int)</span><br><span class="line">    <span class="comment"># 像素及像素出现次数的字典</span></span><br><span class="line">    rows, cols = defaultdict(int)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(cols):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(cols):</span><br><span class="line">            pixel = image.getpixel((i, j))</span><br><span class="line">            pixel_dict[pixel] == <span class="number">1</span></span><br><span class="line">    count_max = max(pixel_dict.valuer())  <span class="comment"># 获取像素出现最多的次数</span></span><br><span class="line">    pixel_dict_reverse = &#123;v: k <span class="keyword">for</span> k, v <span class="keyword">in</span> pixel_dict.items()&#125;</span><br><span class="line">    threshold = pixel_dict_reverse[count_max]  <span class="comment"># 获取出现次数最多的像素点</span></span><br><span class="line">    <span class="keyword">return</span> threshold</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 按照阈值进行二值化处理</span></span><br><span class="line"><span class="comment"># threshold:像素阈值</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_bin_table</span><span class="params">(threshold)</span>:</span></span><br><span class="line">    <span class="comment"># 获取灰度转二值的映射table</span></span><br><span class="line">    table = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">256</span>):</span><br><span class="line">        rate = <span class="number">0.1</span>  <span class="comment"># 在threshold的适当范围内进行处理</span></span><br><span class="line">        <span class="keyword">if</span> threshold * (<span class="number">1</span> - rate) &lt;= i &lt;= threshold * (<span class="number">1</span> * rate):</span><br><span class="line">            table.append(<span class="number">1</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            table.append(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">return</span> table</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 去掉二值化处理后的图片中的噪声点</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cut_noise</span><span class="params">(image)</span>:</span></span><br><span class="line">    rows, cols = image.size  <span class="comment"># 图片的宽度和高度</span></span><br><span class="line">    change_pos = []  <span class="comment"># 记录噪声点位置</span></span><br><span class="line">    <span class="comment"># 遍历图片中的每个点，除掉边缘</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, rows - <span class="number">1</span>):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">1</span>, cols - <span class="number">1</span>):</span><br><span class="line">            <span class="comment"># pixel_set用来记录该店附近的黑色像素的数量</span></span><br><span class="line">            pixel_set = []</span><br><span class="line">            <span class="comment"># 取该点的邻域为以该点为中心的九宫格</span></span><br><span class="line">            <span class="keyword">for</span> m <span class="keyword">in</span> range(i - <span class="number">1</span>, i + <span class="number">2</span>):</span><br><span class="line">                <span class="keyword">for</span> n <span class="keyword">in</span> range(j - <span class="number">1</span>, j + <span class="number">2</span>):</span><br><span class="line">                    <span class="keyword">if</span> image.getpixel((m, n)) != <span class="number">1</span>:  <span class="comment"># 1为白色，8为黑色</span></span><br><span class="line">                        pixel_set.append(image.getpixel((m, n)))</span><br><span class="line"></span><br><span class="line">            <span class="comment"># 如果该位置的九宫内的黑色数量小于等于4,则判断为噪声</span></span><br><span class="line">            <span class="keyword">if</span> len(pixel_set) &lt;= <span class="number">4</span>:</span><br><span class="line">                change_pos.append((i, j))</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 相对应位置进行像素修改，将噪声处的像素变为1（白色）</span></span><br><span class="line">    <span class="keyword">for</span> pos <span class="keyword">in</span> change_pos:</span><br><span class="line">        image.putpixel(pos, <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> image  <span class="comment"># 返回修改后的图片</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 识别图片中的数字加字母</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 传入参数为图片路径，返回结果为：识别结果</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">OCR_lmj</span><span class="params">(img_path)</span>:</span></span><br><span class="line">    image = Image.open(img_path)  <span class="comment"># 打开图片文件</span></span><br><span class="line">    imgry = image.convert(<span class="string">'L'</span>)  <span class="comment"># 转化为灰度图</span></span><br><span class="line">    <span class="comment"># 获取图片中的出现次数最多的像素，即为该图片的背景</span></span><br><span class="line">    max_pixel = get_threshold(imgry)</span><br><span class="line">    <span class="comment"># 将图片进行二值化处理</span></span><br><span class="line">    table = get_bin_table(threshold=max_pixel)</span><br><span class="line">    out = imgry.point(table, <span class="string">'1'</span>)</span><br><span class="line">    <span class="comment"># 去掉图片中的噪声(孤立点)</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    out = cut_noise(out)</span><br><span class="line">    <span class="comment"># 保存图片</span></span><br><span class="line">    <span class="comment"># out.save('E"//figuress/img_gray.jag')</span></span><br><span class="line">    <span class="comment"># 仅识别图片中的数字</span></span><br><span class="line">    <span class="comment"># text = pytesseract.image_to_string(out,config='digits')</span></span><br><span class="line">    <span class="comment"># 识别图片中的数字和字母</span></span><br><span class="line">    text = pytesseract.image_to_string(out)</span><br><span class="line">    <span class="comment"># 去掉识别结果中的特殊字符</span></span><br><span class="line">    exclude_char_list = <span class="string">' .:\\|\'\"?![],()~@#$%^&amp;*_+=&#123;&#125;;&lt;&gt;/￥'</span></span><br><span class="line">    text = <span class="string">''</span>.join([x <span class="keyword">for</span> x <span class="keyword">in</span> text <span class="keyword">if</span> x <span class="keyword">not</span> <span class="keyword">in</span> exclude_char_list])</span><br><span class="line">    <span class="comment"># print(text)</span></span><br><span class="line">    <span class="keyword">return</span> text</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="comment"># 之别指定文件目录下的图片</span></span><br><span class="line">    <span class="comment"># 图片存放目录figures</span></span><br><span class="line">    dir = <span class="string">'E://figures'</span></span><br><span class="line">    correct_count = <span class="number">0</span>  <span class="comment"># 图片总数</span></span><br><span class="line">    total_count = <span class="number">0</span>  <span class="comment"># 识别正确的图片数量</span></span><br><span class="line">    <span class="comment"># 遍历figures下的png，jpg文件</span></span><br><span class="line">    <span class="keyword">for</span> file <span class="keyword">in</span> os.listdir(dir):</span><br><span class="line">        <span class="keyword">if</span> file.endswith(<span class="string">'.png'</span>) <span class="keyword">or</span> file.endswith(<span class="string">'.jpg'</span>):</span><br><span class="line">            <span class="comment"># print(file)</span></span><br><span class="line">            image_path = <span class="string">'%s/%s'</span> % (dir, file)  <span class="comment"># 图片路径</span></span><br><span class="line">            answer = file.split(<span class="string">'.'</span>)[<span class="number">0</span>]  <span class="comment"># 图片名称，即图片中的正确文字</span></span><br><span class="line">            recognizition = OCR_lmj(image_path)  <span class="comment"># 图片识别的文字结果</span></span><br><span class="line">            print((answer, recognizition))</span><br><span class="line">            <span class="keyword">if</span> recognizition == answer:  <span class="comment"># 如果识别结果正确，则total_count加1</span></span><br><span class="line">                correct_count += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">            total_count += <span class="number">1</span></span><br><span class="line">    print(<span class="string">'Total count:%d,correct:%d.'</span> % (total_count, correct_count))</span><br><span class="line">    ...</span><br><span class="line">    <span class="comment"># 单张图片识别image_path = 'E://figures/code (1).jpg' OCR_lmj(image_path)</span></span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">main()</span><br></pre></td></tr></table></figure>
-<h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><p><img src="/archives/python-yzm/py2.jpg" alt=""></p>
-<p>我们可以在图片识别方面的算法再加改进，以提高图片识别的正确率。当然，以上算法并不是对所有验证码都适用，不同的验证码需要用不同的图片处理算法。</p>
-<p>由于mac配置pytesseract很复杂，而我又没有Windows的python环境，所以代码未经测试</p>
-<p>原文地址<a href="https://mp.weixin.qq.com/s/SY50WuJtd89fCSj3-J_snA" target="_blank" rel="noopener">Python破解验证码技术，识别率高达百分之八十！</a></p>
-
+        <p>在GitHub看到一个微信机器人的开源项目，便fork了源码下来玩耍了一下</p>
+<p>“python关于开发微信的库主要有<code>itchat</code>和<code>wxpy</code>，而<code>wxpy</code>底层是调用的<code>itchat</code>，所以如果你只是要使用的话建议使用<code>wxpy</code>库，它比其他的库都要优雅，更面向对象，而且深度整合了<code>图灵机器人</code>和<code>小i机器人</code>；而<code>itchat</code>扩展性更好，如果你想自己开发一个自己的微信库那建议选<code>itchat</code>。”</p>
+<p>图灵？？？很早之前玩过的，功能很强大</p>
+<h3 id="整体流程"><a href="#整体流程" class="headerlink" title="整体流程"></a>整体流程</h3><p><img src="/archives/tuling/tuling6.png" alt="tuling6"></p>
+<a id="more"></a>
+<h3 id="部分源码"><a href="#部分源码" class="headerlink" title="部分源码"></a>部分源码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> wxpy <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> wx_reply</span><br><span class="line"><span class="keyword">import</span> wx_command</span><br><span class="line"><span class="keyword">import</span> load</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 微信机器人，缓存登录信息</span></span><br><span class="line"><span class="comment"># 如果你需要部署在服务器中，则在下面加入一个入参console_qr=True</span></span><br><span class="line"><span class="comment"># console_qr表示在控制台打出二维码，部署到服务器时需要加上</span></span><br><span class="line">bot = Bot(cache_path=<span class="keyword">True</span>)</span><br><span class="line"><span class="comment"># 加载配置信息到机器人</span></span><br><span class="line">load.load_config_to_bot(bot)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="string">"""好友功能"""</span></span><br><span class="line"><span class="meta">@bot.register(msg_types=FRIENDS)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">auto_accept_friends</span><span class="params">(msg)</span>:</span></span><br><span class="line">    <span class="string">"""自动接受好友请求"""</span></span><br><span class="line">    wx_reply.auto_accept_friends(msg)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@bot.register(chats=Friend)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">friend_msg</span><span class="params">(msg)</span>:</span></span><br><span class="line">    <span class="string">"""接收好友消息"""</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> msg.bot.is_friend_auto_reply:</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">None</span></span><br><span class="line">    <span class="keyword">if</span> msg.type == TEXT:</span><br><span class="line">        wx_reply.auto_reply(msg)</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">None</span></span><br><span class="line">    <span class="keyword">elif</span> msg.type == RECORDING:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'不停不停，王八念经'</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="string">"""群功能"""</span></span><br><span class="line"><span class="meta">@bot.register(chats=Group)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">group_msg</span><span class="params">(msg)</span>:</span></span><br><span class="line">    <span class="string">"""接收群消息"""</span></span><br><span class="line">    <span class="comment"># 群@转发功能</span></span><br><span class="line">    <span class="keyword">if</span> msg.is_at <span class="keyword">and</span> msg.bot.is_forward_group_at_msg:</span><br><span class="line">        msg.forward(msg.bot.master, prefix=<span class="string">'「&#123;0&#125;」在群「&#123;1&#125;」中艾特了你：'</span>.format(msg.member.name, msg.chat.name))</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> msg.type == TEXT:</span><br><span class="line">        <span class="comment"># 群回复</span></span><br><span class="line">        <span class="keyword">if</span> msg.bot.is_group_reply:</span><br><span class="line">            <span class="keyword">if</span> msg.bot.is_group_at_reply:</span><br><span class="line">                <span class="comment"># @机器人才回复</span></span><br><span class="line">                <span class="keyword">if</span> msg.is_at:</span><br><span class="line">                    wx_reply.auto_reply(msg)</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="comment"># 不用@直接回复</span></span><br><span class="line">                wx_reply.auto_reply(msg)</span><br><span class="line">    <span class="keyword">elif</span> msg.type == SHARING <span class="keyword">and</span> msg.bot.is_listen_sharing <span class="keyword">and</span> msg.chat <span class="keyword">in</span> msg.bot.listen_sharing_groups:</span><br><span class="line">        <span class="comment"># 群分享转发监控，防止分享广告</span></span><br><span class="line">        msg.forward(msg.bot.master, prefix=<span class="string">'分享监控：「&#123;0&#125;」在「&#123;1&#125;」分享了：'</span>.format(msg.member.name, msg.chat.name))</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">    <span class="comment"># 监听好友群聊，如老板讲话</span></span><br><span class="line">    <span class="keyword">if</span> msg.bot.is_listen_friend <span class="keyword">and</span> msg.chat <span class="keyword">in</span> msg.bot.listen_friend_groups <span class="keyword">and</span> msg.member.is_friend <span class="keyword">in</span> msg.bot.listen_friends:</span><br><span class="line">        msg.forward(msg.bot.master, prefix=<span class="string">'监听指定好友群消息：「&#123;0&#125;」在「&#123;1&#125;」发了消息：'</span>.format(msg.member.is_friend.remark_name <span class="keyword">or</span> msg.member.nick_name, msg.chat.name))</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">None</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@bot.register(msg_types=NOTE)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">system_msg</span><span class="params">(msg)</span>:</span></span><br><span class="line">    <span class="string">"""接收系统消息"""</span></span><br><span class="line">    wx_reply.handle_system_msg(msg)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="string">"""管理员功能"""</span></span><br><span class="line"><span class="meta">@bot.register(chats=bot.master)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">do_command</span><span class="params">(msg)</span>:</span></span><br><span class="line">    <span class="string">"""执行管理员命令"""</span></span><br><span class="line">    wx_command.do_command(msg)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 堵塞进程，直到结束消息监听 (例如，机器人被登出时)</span></span><br><span class="line"><span class="comment"># embed() 互交模式阻塞，电脑休眠或关闭互交窗口则退出程序</span></span><br><span class="line">bot.join()</span><br></pre></td></tr></table></figure>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p><code>wxpy</code>（底层使用<code>itchat</code>）库就是模拟登录网页端，然后调用微信的api实现操作的，我使用了两个微信号登录网页端都被限制登录了，所以无法进行后续的测试了，据说是2018年后注册的新号不能登录，但是我这俩号都用了好多年了鸭……</p>
+<h3 id="教程：Python创建微信机器人"><a href="#教程：Python创建微信机器人" class="headerlink" title="教程：Python创建微信机器人"></a>教程：<a href="https://mp.weixin.qq.com/s/LQ_4GcI9c_MeBTpQKc7eAg?scene=25#wechat_redirect" target="_blank" rel="noopener">Python创建微信机器人</a></h3>
       
     </div>
     
@@ -617,8 +608,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/archives/love-story/" rel="next" title="love story">
-                <i class="fa fa-chevron-left"></i> love story
+              <a href="/archives/python-yzm/" rel="next" title="验证码破解">
+                <i class="fa fa-chevron-left"></i> 验证码破解
               </a>
             
           </div>
@@ -626,10 +617,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/archives/tuling/" rel="prev" title="Python 创建“高智商”微信机器人">
-                Python 创建“高智商”微信机器人 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -679,9 +666,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'https://ctqq.me/archives/python-yzm/';
-          this.page.identifier = 'archives/python-yzm/';
-          this.page.title = '验证码破解';
+          this.page.url = 'https://ctqq.me/archives/tuling/';
+          this.page.identifier = 'archives/tuling/';
+          this.page.title = 'Python 创建“高智商”微信机器人';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://qiqi-1.disqus.com/embed.js';
@@ -859,7 +846,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#过程"><span class="nav-number">1.</span> <span class="nav-text">过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#源码"><span class="nav-number">2.</span> <span class="nav-text">源码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结果"><span class="nav-number">3.</span> <span class="nav-text">结果</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#整体流程"><span class="nav-number">1.</span> <span class="nav-text">整体流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部分源码"><span class="nav-number">2.</span> <span class="nav-text">部分源码</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number"></span> <span class="nav-text">总结</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#教程：Python创建微信机器人"><span class="nav-number">1.</span> <span class="nav-text">教程：Python创建微信机器人</span></a></li></ol></li></div>
             
 
           </div>
